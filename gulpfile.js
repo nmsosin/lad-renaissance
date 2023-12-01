@@ -33,10 +33,10 @@ function html() {
 }
 
 //fonts
-// function fonts() {
-//   return gulp.src('src/fonts/*.woff2')
-//     .pipe(gulp.dest('build/'));
-// }
+function fonts() {
+  return gulp.src('src/fonts/*.woff*')
+    .pipe(gulp.dest('build/assets/fonts'));
+}
 
 // sass to css
 function styles() {
@@ -121,7 +121,7 @@ const build = gulp.series(
     styles,
     script,
     images,
-    // fonts,
+    fonts,
   )
 );
 

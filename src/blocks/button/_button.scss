@@ -1,0 +1,10 @@
+.button {
+  @include button-base;
+}
+
+.button_menu {
+  @include button-base;
+  width: 121px;
+  border-radius: 80px;
+  padding: 10px 20px;
+}

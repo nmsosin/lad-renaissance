@@ -1,11 +1,14 @@
 @import "normalize.css/normalize";
 
-@import "variables";
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "helpers/utilities";
 
-@import "mixins";
-@import "placeholders";
+// base styles
+@import "base/layout";
+@import "base/typography";
 
-@import "base";
-@import "utilities";
-
+// block styles
 @import "../blocks/**/*.scss";

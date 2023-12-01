@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('../blocks/head/head.html', {"title": "Главная страница"})
+@@include("../blocks/head/head.html", {"title": "Главная страница"})
 <body>
-  @@include('../blocks/header/header.html', {"title": "Главная страница"})
+  @@include("../blocks/header/header.html")
   <main>
-    Page content
+    <section class="main container">
+      <h1 class="main__title">Проекты от ЖК «Возрождение»</h1>
+      <ul class="projects-list">
+        <li class="project">
+          @@include("../blocks/project/project__info/project__info.html", {"title": "Литер 1", "count": "350", "quarter": "2-й", "year": "2022"})
+          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button", "icon": "building"})
+        </li>
+        <li class="project">
+          @@include("../blocks/project/project__info/project__info.html", {"title": "Литер 2", "count": "240", "quarter": "3-й", "year": "2022"})
+          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button", "icon": "building"})
+        </li>
+        <li class="project">
+          @@include("../blocks/project/project__info/project__info.html", {"title": "Литер 3", "count": "180", "quarter": "4-й", "year": "2022"})
+          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button", "icon": "building"})
+        </li>
+      </ul>
+    </section>
   </main>
+  @@include("../blocks/footer/footer.html")
+
+  <script src="assets/js/script.min.js"></script>
 </body>
 </html>

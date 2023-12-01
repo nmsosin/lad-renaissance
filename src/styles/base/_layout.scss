@@ -1,0 +1,14 @@
+body {
+  font-family: Montserrat;
+  margin: 0 auto;
+  background-color: var(--light-grey-bg);
+  color: var(--primary-blue);
+}
+
+ul {
+ @include reset-list;
+}
+
+a {
+  @include reset-link;
+}

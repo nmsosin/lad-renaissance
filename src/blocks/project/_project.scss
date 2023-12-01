@@ -1,0 +1,41 @@
+.project {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 63, 128, 0.05);
+  padding: 10px 10px 20px;
+
+  &__image {
+    border-radius: 10px;
+  }
+
+  &__info {
+    padding: 20px 0 40px;
+  }
+
+  &__details {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 76px;
+    background-color: var(--accent-blue-bg);
+    border-radius: 30px;
+    padding: 5px 10px;
+  }
+
+  &__title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__text+&__text {
+    padding-top: 10px;
+  }
+}
