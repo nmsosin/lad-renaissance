@@ -1,18 +1,34 @@
 <footer class="footer">
-  <img src="assets/images/Logo_light.svg" alt="Логотип ЖК 'Возрождение'">
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Закажите бесплатную консультацию</p>
-  <button>Заказать консультацию</button>
-  <hr>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
-  <hr>
-  <p class="footer__text">Остались вопросы?</p>
-  <p class="footer__text">Остались вопросы?</p>
+  <div class="footer__wrapper footer__wrapper_center container lrp80">
+    <img src="assets/images/Logo_light.svg" alt="Логотип ЖК 'Возрождение'">
+    <p class="footer__questions">Остались вопросы?</p>
+    <p class="footer__descriptor">Закажите бесплатную консультацию</p>
+    @@include("../../blocks/button/button.html", { "text": "Заказать консультацию", "class": "button_callback", "icon": ""})
+  </div>
+  <hr class="footer__divider">
+  <div class="footer__wrapper container lrp40">
+    <p class="footer__text">Телефон:</p>
+    <a href="tel:+7982452267" class="footer__accent">+7 982 45-22-67</a>
+    <p class="footer__text">Ел. почта:</p>
+    <a href="mailto:vozrojdenie@yandex.ru" class="footer__accent">vozrojdenie@yandex.ru</a>
+    <p class="footer__text">Адрес офиса:</p>
+    <a href="#" class="footer__accent">Ярославская&nbsp;обл., Ярославль, Почтовая улица 12/2</a>
+    <p class="footer__text">Адрес обекта:</p>
+    <a href="#" class="footer__accent">Ярославская обл. Ярославль, рядом&nbsp;с ул.&nbsp;Бабича 10/22</a>
+  </div>
+  <hr class="footer__divider">
+  <div class="footer__wrapper container lrp20">
+    <div class="footer__actions">
+      <a href="#" class="footer__credentials">Политика конфиденциальности</a>
+      <a href="#" class="footer__credentials">Документы</a>
+    </div>
+    <div class="footer__actions">
+      <div class="footer__socials">
+        <img src="assets/images/vk-icon.svg" alt="ВКонтакте">
+        <img src="assets/images/tg-icon.svg" alt="Телеграм">
+        <img src="assets/images/instagram-icon.svg" alt="Инстаграм">
+      </div>
+      @@include("../../blocks/button/button.html", { "text": "", "class": "button_navigate", "icon": "move-up"})
+    </div>
+  </div>
 </footer>

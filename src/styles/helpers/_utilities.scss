@@ -1,5 +1,21 @@
 .container {
-  max-width: 440px;
+  box-sizing: border-box;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.lrp20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.lrp40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.lrp80 {
+  padding-left: 80px;
+  padding-right: 80px;
 }

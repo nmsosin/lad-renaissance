@@ -6,19 +6,22 @@
 
   &__image {
     border-radius: 10px;
+    vertical-align:bottom
   }
 
   &__info {
-    padding: 20px 0 40px;
+    padding: 20px 10px 40px;
   }
 
   &__details {
+    box-sizing: border-box;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     width: 76px;
     background-color: var(--accent-blue-bg);
+    color: var(--accent-blue-text);
     border-radius: 30px;
     padding: 5px 10px;
   }
@@ -32,6 +35,9 @@
   }
 
   &__text {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     margin: 0;
   }
 

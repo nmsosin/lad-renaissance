@@ -8,7 +8,8 @@
 
 ## Технологии
 __Сборка__: gulp
-__Стили__: SCSS
-__Деплой__: gh-pages
 
-[Ссылка на GitHub Pages](https://nmsosin.github.io/lad-renaissance/)
+__Стили__: SCSS
+
+__Деплой__: 
+[gh-pages](https://nmsosin.github.io/lad-renaissance/)
