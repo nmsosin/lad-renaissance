@@ -22,6 +22,7 @@
 }
 
 @mixin button-base {
+  box-sizing: border-box;
   background: var(--button-blue);
   color: var(--white);
   box-shadow: 0px -2px 0px 0px rgba(0, 32, 64, 0.10) inset, 0px 2px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 10px 0px rgba(0, 32, 64, 0.10);
@@ -32,4 +33,19 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
+}
+
+@mixin button-secondary {
+  box-sizing: border-box;
+  background: transparent;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  width: 400px;
+  border-radius: 80px;
+  padding: 30px 97px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
 }

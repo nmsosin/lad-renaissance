@@ -1,10 +1,13 @@
 :root {
   --primary-blue: rgba(0, 32, 64, 1);
+  --dark-overlay: rgba(0, 32, 64, .5);
+  --box-shadow: rgba(0, 63, 128, .05);
   --button-blue: linear-gradient(180deg, rgba(64, 159, 255, 1), rgba(0, 127, 255, 1));
   --accent-blue-text: rgba(0, 127, 255, 1);
   --accent-blue-bg: rgba(242, 249, 255, 1);
   --light-grey-bg: rgba(249, 252, 255, 1);
   --white-bg: rgba(242, 242, 242, 1);
+  --white-overlay: rgba(249, 252, 255, 0.95);
   --white: #fff;
 }
 

@@ -6,6 +6,23 @@
   font-weight: 700;
 }
 
+.button_primary {
+  @include button-base;
+  border-radius: 80px;
+  margin: 0 auto;
+  gap: 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button_secondary {
+  @include button-secondary;
+  margin: 0 auto;
+  gap: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .button_menu {
   @include button-base;
   width: 121px;
@@ -18,9 +35,9 @@
   background-color: var(--white);
   color: var(--primary-blue);
   font-weight: 700;
-  white-space: nowrap;
   padding: 30px 60px;
   border-radius: 80px;
+  white-space: nowrap;
 }
 
 .button_navigate {

@@ -1,0 +1,29 @@
+<li class="advantage @@class">
+  <div class="advantage__overlay">
+    @@if (icon == "infrastructure") {
+    <img class="advantage__icon" src="assets/images/infrastructure-icon_light.svg" alt="Иконка инфраструктура">
+    }
+    @@if (icon == "ecology") {
+    <img class="advantage__icon" src="assets/images/ecology-icon.svg" alt="Иконка росток">
+    }
+    @@if (icon == "transport") {
+    <img class="advantage__icon" src="assets/images/transport-icon.svg" alt="Иконка автобус">
+    }
+    @@if (icon == "apartments") {
+    <img class="advantage__icon" src="assets/images/aparts-icon.svg" alt="Иконка планировки квартиры">
+    }
+    @@if (icon == "reliability") {
+    <img class="advantage__icon" src="assets/images/reliability-icon.svg" alt="Иконка большой палец вверх">
+    }
+    @@if (icon == "price") {
+    <img class="advantage__icon" src="assets/images/price-icon.svg" alt="Иконка монетки">
+    }
+
+    <p class="advantage__text">
+      @@text
+    </p>
+    <button class="advantage__toggle-button" type="button">
+      <img src="assets/images/arrow-icon.svg" alt="Стрелка ">
+    </button>
+  </div>
+</li>

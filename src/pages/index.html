@@ -4,22 +4,68 @@
 <body>
   @@include("../blocks/header/header.html")
   <main>
-    <section class="main container">
-      <h1 class="main__title">Проекты от ЖК «Возрождение»</h1>
-      <ul class="projects-list">
-        <li class="project">
-          @@include("../blocks/project/project__info/project__info.html", {"title": "Литер 1", "count": "350", "quarter": "2-й", "year": "2022"})
-          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button", "icon": "building"})
-        </li>
-        <li class="project">
-          @@include("../blocks/project/project__info/project__info.html", {"title": "Литер 2", "count": "240", "quarter": "3-й", "year": "2022"})
-          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button", "icon": "building"})
-        </li>
-        <li class="project">
-          @@include("../blocks/project/project__info/project__info.html", {"title": "Литер 3", "count": "180", "quarter": "4-й", "year": "2022"})
-          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button", "icon": "building"})
-        </li>
+    <section class="hero">
+      <div class="hero__overlay">
+        <img
+            class="hero__image"
+            src="assets/images/building-bg_mobile.jpg"
+            alt="Многоквартирный жилой дом от застройщика"
+        >
+        <div class="container">
+          <h2 class="section-title section-title_m section-title_first">Более <span class="section-title__accent">1000</span> комфортных квартир от 2,3 млн рублей в Дзержинском р-не
+            <a href="./projects.html">
+              Ярославля
+            </a>
+          </h2>
+          @@include("../blocks/button/button.html", { "text": "Выбрать квартиру", "class": "button_primary", "icon": "building"})
+          @@include("../blocks/button/button.html", { "text": "Получить консультацию", "class": "button_secondary", "icon": ""})
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages container">
+      <h2 class="section-title section-title_m">Преимущества жизни в ЖК “Возрождение”</h2>
+      <ul class="advantages">
+        @@include("../blocks/advantage/advantage.html", { "text": "Инфраструктура", class:"advantage_infrastructure", "icon": "infrastructure"})
+        @@include("../blocks/advantage/advantage.html", { "text": "Экология", class:"advantage_ecology", "icon": "ecology"})
+        @@include("../blocks/advantage/advantage.html", { "text": "Транспортная доступность", class:"advantage_transport", "icon": "transport"})
+        @@include("../blocks/advantage/advantage.html", { "text": "Разнообразие планировки", class:"advantage_apartments", "icon": "apartments"})
+        @@include("../blocks/advantage/advantage.html", { "text": "Надежность", class:"advantage_reliability", "icon": "reliability"})
+        @@include("../blocks/advantage/advantage.html", { "text": "Доступная стоимость", class:"advantage_price", "icon": "price"})
+
       </ul>
+    </section>
+
+    <section class="location">
+      <h2 class="section-title section-title_m">Инфраструктура и расположение</h2>
+
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8bb5b2762e979458b85c066402d53fb6e66dc0457614895ba0e585757ed9e5a7&amp;height=700&amp;lang=ru_RU&amp;scroll=false"></script>
+
+    </section>
+
+    <section class="apartments container">
+      <h2 class="section-title section-title_m">Планировка квартир</h2>
+
+    </section>
+
+    <section class="gallery container">
+      <h2 class="section-title section-title_m">Галерея наших фото</h2>
+
+    </section>
+
+    <section class="purchase container">
+      <h2 class="section-title section-title_m">Как купить?</h2>
+
+    </section>
+
+    <section class="feedback container">
+      <h2 class="section-title section-title_m">Отзывы наших клиентов</h2>
+
+    </section>
+
+    <section class="partners container">
+      <h2 class="section-title section-title_m">Наши партнеры</h2>
+
     </section>
   </main>
   @@include("../blocks/footer/footer.html")
